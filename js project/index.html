@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Info</title>
+
+    <link rel="stylesheet" href="styale.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container" id="bg">
+
+    <!-- LEFT SIDE -->
+    <div class="left">
+
+        <div class="logo">
+            <h3>WeatherInfo</h3>
+        </div>
+
+        <div class="weather-box">
+
+            <div class="temp-box">
+                <h1 id="temp">31.1°</h1>
+
+                <div class="city-box">
+                    <h2 id="city">Seoul</h2>
+                    <p id="date">
+                        16:53 - Saturday, Jul 27 2026
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="weather-icon">
+
+                <img
+                id="icon"
+                src="https://cdn-icons-png.flaticon.com/512/869/869869.png"
+                alt="">
+
+                <h4 id="condition">
+                    Partly Cloudy
+                </h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+        <!-- RIGHT SIDE -->
+
+    <div class="right">
+
+        <div class="search-box">
+
+            <input
+            type="text"
+            id="search"
+            placeholder="Search Location...">
+
+            <button id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+        <div class="city-list">
+
+            <p class="city-name">Ahmedabad</p>
+
+            <p class="city-name">Gandhinagar</p>
+
+            <p class="city-name">Surat</p>
+
+            <p class="city-name">Vadodara</p>
+
+        </div>
+
+        <hr>
+
+        <div class="details">
+
+            <h4>Weather Details</h4>
+
+            <div class="row">
+                <span>Cloudy</span>
+                <span id="cloud">75%</span>
+            </div>
+
+            <div class="row">
+                <span>Humidity</span>
+                <span id="humidity">75%</span>
+            </div>
+
+            <div class="row">
+                <span>Wind</span>
+                <span id="wind">15.8km/h</span>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer">
+            <p>
+                Created with
+                <i class="fa-solid fa-heart"></i>
+                by Zafar Shabbir
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="console.js"></script>
+
+</body>
+</html>
