@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Result Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <div class="cap">🎓</div>
+                <div>
+                    <b>SRMS</b>
+                    <small>Student Result<br>Management System</small>
+                </div>
+            </div>
+            <div class="menu active">🏠 Dashboard</div>
+            <div class="menu">👥 Students</div>
+            <div class="menu">📋 Results</div>
+            <div class="menu">📊 Reports</div>
+            <div class="menu">⚙ Settings</div>
+        </div>
+
+        <div class="main">
+            <div class="top">
+                <div class="hamburger">☰</div>
+                <input type="text" class="topsearch" placeholder="Search students, results...">
+                <div class="admin">
+                    <div class="usericon">AU</div>
+                    <div>
+                        <b>Admin User</b>
+                        <small>Administrator</small>
+                    </div>
+                    ▼
+                </div>
+            </div>
+            <div class="content">
+                <div class="banner">
+                    <div>
+                        <h1>Student Result Management System</h1>
+                        <p>Manage student marks, grades, and performance easily.</p>
+                    </div>
+                    <div class="books">
+                        🎓 📚
+                        <strong>A+</strong>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="cardicon blue">👥</div>
+                        <div>
+                            <p>Total Students</p>
+                            <h2>108<span>↑ 12%</span></h2>
+                            <small>Registered students</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardicon green">✓</div>
+                        <div>
+                            <p>Passed</p>
+                            <h2>98 <span>↑ 8%</span></h2>
+                            <small>81.7% pass rate</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardicon red">✕</div>
+                        <div>
+                            <p>Failed</p>
+                            <h2>22 <span class="redtext">↓ 4%</span></h2>
+                            <small>18.3% failed</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardicon yellow">▥</div>
+                        <div>
+                            <p>Average Percentage</p>
+                            <h2>72.6%</h2>
+                            <small>Overall performance</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <div class="resultbox">
+                        <div class="resulthead">
+                            <h3>Student Results</h3>
+                            <div class="tools">
+                                <input type="text" id="search" placeholder="Search student...">
+                                <select id="courseFilter">
+                                    <option value="all">All Courses</option>
+                                    <option value="BCA">BCA</option>
+                                    <option value="B.Sc">B.Sc</option>
+                                    <option value="B.Com">B.Com</option>
+                                </select>
+                                <button onclick="sortTable()">
+                                    Sort by Percentage
+                                </button>
+                                <button class="add" onclick="addStudent()">
+                                    + Add Result
+                                </button>
+                            </div>
+                        </div>
+                        <table id="studentTable">
+                            <thead>
+                                <tr>
+                                    <th>Roll No</th>
+                                    <th>Student Name</th>
+                                    <th>Course</th>
+                                    <th>Math</th>
+                                    <th>Science</th>
+                                    <th>English</th>
+                                    <th>Total</th>
+                                    <th>Percentage</th>
+                                    <th>Grade</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>101</td>
+                                    <td>Arav Sharma</td>
+                                    <td>BCA</td>
+                                    <td>85</td>
+                                    <td>78</td>
+                                    <td>92</td>
+                                    <td>255</td>
+                                    <td>85.0%</td>
+                                    <td><span class="grade a">A</span></td>
+                                    <td><span class="pass">Pass</span></td>
+                                    <td>
+                                        <button class="edit">✎</button>
+                                        <button class="delete">🗑</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>102</td>
+                                    <td>Priya Singh</td>
+                                    <td>B.Sc</td>
+                                    <td>76</td>
+                                    <td>69</td>
+                                    <td>80</td>
+                                    <td>225</td>
+                                    <td>75.0%</td>
+                                    <td><span class="grade b">B</span></td>
+                                    <td><span class="pass">Pass</span></td>
+                                    <td>
+                                        <button class="edit">✎</button>
+                                        <button class="delete">🗑</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>103</td>
+                                    <td>Rohan Kumar</td>
+                                    <td>B.Com</td>
+                                    <td>45</td>
+                                    <td>52</td>
+                                    <td>48</td>
+                                    <td>145</td>
+                                    <td>48.3%</td>
+                                    <td><span class="grade d">D</span></td>
+                                    <td><span class="fail">Fail</span></td>
+                                    <td>
+                                        <button class="edit">✎</button>
+                                        <button class="delete">🗑</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>104</td>
+                                    <td>Sneha Patel</td>
+                                    <td>BCA</td>
+                                    <td>92</td>
+                                    <td>88</td>
+                                    <td>85</td>
+                                    <td>265</td>
+                                    <td>88.3%</td>
+                                    <td><span class="grade a">A</span></td>
+                                    <td><span class="pass">Pass</span></td>
+                                    <td>
+                                        <button class="edit">✎</button>
+                                        <button class="delete">🗑</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>105</td>
+                                    <td>Vikram Mehta</td>
+                                    <td>B.Sc</td>
+                                    <td>61</td>
+                                    <td>57</td>
+                                    <td>65</td>
+                                    <td>183</td>
+                                    <td>61.0%</td>
+                                    <td><span class="grade c">C</span></td>
+                                    <td><span class="pass">Pass</span></td>
+                                    <td>
+                                        <button class="edit">✎</button>
+                                        <button class="delete">🗑</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>106</td>
+                                    <td>Ananya Gupta</td>
+                                    <td>B.Com</td>
+                                    <td>38</td>
+                                    <td>42</td>
+                                    <td>40</td>
+                                    <td>120</td>
+                                    <td>40.0%</td>
+                                    <td><span class="grade d">D</span></td>
+                                    <td><span class="fail">Fail</span></td>
+                                    <td>
+                                        <button class="edit">✎</button>
+                                        <button class="delete">🗑</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>107</td>
+                                    <td>Karan Verma</td>
+                                    <td>BCA</td>
+                                    <td>79</td>
+                                    <td>81</td>
+                                    <td>76</td>
+                                    <td>236</td>
+                                    <td>78.7%</td>
+                                    <td><span class="grade b">B</span></td>
+                                    <td><span class="pass">Pass</span></td>
+                                    <td>
+                                        <button class="edit">✎</button>
+                                        <button class="delete">🗑</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>108</td>
+                                    <td>Meera Iyer</td>
+                                    <td>B.Sc</td>
+                                    <td>68</td>
+                                    <td>72</td>
+                                    <td>70</td>
+                                    <td>210</td>
+                                    <td>70.0%</td>
+                                    <td><span class="grade b">B</span></td>
+                                    <td><span class="pass">Pass</span></td>
+                                    <td>
+                                        <button class="edit">✎</button>
+                                        <button class="delete">🗑</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="right">
+                        <div class="formbox">
+                            <h3>✎ Add / Edit Result</h3>
+                            <label>Student Name</label>
+                            <input type="text" id="studentName" placeholder="Enter student name">
+
+                            <label>Roll No</label>
+                            <input type="text" id="rollNo" placeholder="Enter roll number">
+
+                            <label>Course</label>
+                            <select id="course">
+                                <option>Select course</option>
+                                <option>BCA</option>
+                                <option>B.Sc</option>
+                                <option>B.Com</option>
+                            </select>
+                            <div class="marks">
+                                <div>
+                                    <label>Math Marks</label>
+                                    <input type="number" id="math" placeholder="0 - 100">
+                                </div>
+                                <div>
+                                    <label>Science Marks</label>
+                                    <input type="number" id="science" placeholder="0 - 100">
+                                </div>
+                                <div>
+                                    <label>English Marks</label>
+                                    <input type="number" id="english" placeholder="0 - 100">
+                                </div>
+                            </div>
+                            <button class="save" onclick="saveResult()">
+                                Save Result
+                            </button>
+                        </div>
+                        <div class="performance">
+                            <h3>📊 Performance Overview</h3>
+                            <div class="bars">
+                                <div>
+                                    <b>73%</b>
+                                    <span class="bar math"></span>
+                                    <small>Math</small>
+                                </div>
+                                <div>
+                                    <b>71%</b>
+                                    <span class="bar science"></span>
+                                    <small>Science</small>
+                                </div>
+                                <div>
+                                    <b>69%</b>
+                                    <span class="bar english"></span>
+                                    <small>English</small>
+                                </div>
+                                <div>
+                                    <b>72.6%</b>
+                                    <span class="bar average"></span>
+                                    <small>Average</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
