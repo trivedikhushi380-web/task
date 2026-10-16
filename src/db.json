@@ -1,53 +1,604 @@
 {
   "students": [
     {
-      "id": "1",
-      "no": 1,
-      "title": "Introduction to React",
-      "img": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800",
-      "category": "js",
-      "date": "2026-09-25"
+      "id": 1,
+      "name": "Aarav Sharma",
+      "course": "Computer Science",
+      "age": 20
     },
     {
-      "id": "2",
-      "no": 2,
-      "title": "JavaScript Basics",
-      "img": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=800",
-      "category": "JavaScript",
-      "date": "2026-09-26"
+      "id": 2,
+      "name": "Priya Patel",
+      "course": "Electronics",
+      "age": 19
     },
     {
-      "id": "3",
-      "no": 3,
-      "title": "Learn HTML and CSS",
-      "img": "https://images.unsplash.com/photo-1621839673705-6617adf9e890?w=800",
-      "category": "Web Development",
-      "date": "2026-09-27"
+      "id": 3,
+      "name": "Rohan Gupta",
+      "course": "Mechanical Engineering",
+      "age": 21
     },
     {
-      "id": "4",
-      "no": 4,
-      "title": "Bootstrap for Beginners",
-      "img": "https://images.unsplash.com/photo-1558655146-d09347e92766?w=800",
-      "category": "Bootstrap",
-      "date": "2026-09-28"
+      "id": 4,
+      "name": "Sneha Reddy",
+      "course": "Information Technology",
+      "age": 20
     },
     {
-      "id": "5",
-      "no": 5,
-      "title": "eye",
-      "img": "https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmBesHWPYE=",
-      "category": "eye",
-      "date": "2026-10-01"
+      "id": 5,
+      "name": "Vikram Singh",
+      "course": "Civil Engineering",
+      "age": 22
     },
     {
-      "no": 7,
-      "title": "ghgh",
-      "img": "https://images.unsplash.com/photo-1526779259212-939e64788e3c?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D",
-      "category": "ddfdf",
-      "date": "2005-09-09",
-      "id": "H9aX0WENIYk"
+      "id": 6,
+      "name": "Ananya Iyer",
+      "course": "Computer Science",
+      "age": 19
+    },
+    {
+      "id": 7,
+      "name": "Karthik Nair",
+      "course": "Data Science",
+      "age": 21
+    },
+    {
+      "id": 8,
+      "name": "Meera Joshi",
+      "course": "Biotechnology",
+      "age": 20
+    },
+    {
+      "id": 9,
+      "name": "Rahul Verma",
+      "course": "Information Technology",
+      "age": 22
+    },
+    {
+      "id": 10,
+      "name": "Isha Shah",
+      "course": "Computer Science",
+      "age": 18
+    },
+    {
+      "id": 11,
+      "name": "Aditya Kumar",
+      "course": "Mechanical Engineering",
+      "age": 21
+    },
+    {
+      "id": 12,
+      "name": "Kavya Desai",
+      "course": "Electronics",
+      "age": 20
+    },
+    {
+      "id": 13,
+      "name": "Arjun Mehta",
+      "course": "Data Science",
+      "age": 22
+    },
+    {
+      "id": 14,
+      "name": "Pooja Mishra",
+      "course": "Civil Engineering",
+      "age": 19
+    },
+    {
+      "id": 15,
+      "name": "Siddharth Rao",
+      "course": "Computer Science",
+      "age": 21
+    },
+    {
+      "id": 16,
+      "name": "Neha Kulkarni",
+      "course": "Biotechnology",
+      "age": 20
+    },
+    {
+      "id": 17,
+      "name": "Manish Yadav",
+      "course": "Information Technology",
+      "age": 23
+    },
+    {
+      "id": 18,
+      "name": "Riya Choudhary",
+      "course": "Electronics",
+      "age": 19
+    },
+    {
+      "id": 19,
+      "name": "Varun Malhotra",
+      "course": "Mechanical Engineering",
+      "age": 22
+    },
+    {
+      "id": 20,
+      "name": "Diya Kapoor",
+      "course": "Data Science",
+      "age": 20
+    },
+    {
+      "id": 21,
+      "name": "Nikhil Jain",
+      "course": "Computer Science",
+      "age": 21
+    },
+    {
+      "id": 22,
+      "name": "Simran Kaur",
+      "course": "Civil Engineering",
+      "age": 20
+    },
+    {
+      "id": 23,
+      "name": "Yash Thakkar",
+      "course": "Information Technology",
+      "age": 19
+    },
+    {
+      "id": 24,
+      "name": "Aditi Sinha",
+      "course": "Biotechnology",
+      "age": 22
+    },
+    {
+      "id": 25,
+      "name": "Harsh Vora",
+      "course": "Electronics",
+      "age": 21
+    },
+    {
+      "id": 26,
+      "name": "Tanvi Pandey",
+      "course": "Computer Science",
+      "age": 18
+    },
+    {
+      "id": 27,
+      "name": "Akash Mishra",
+      "course": "Data Science",
+      "age": 23
+    },
+    {
+      "id": 28,
+      "name": "Nisha Pillai",
+      "course": "Mechanical Engineering",
+      "age": 20
+    },
+    {
+      "id": 29,
+      "name": "Dev Patel",
+      "course": "Civil Engineering",
+      "age": 21
+    },
+    {
+      "id": 30,
+      "name": "Sakshi Bansal",
+      "course": "Information Technology",
+      "age": 19
+    },
+    {
+      "id": 31,
+      "name": "Om Trivedi",
+      "course": "Computer Science",
+      "age": 22
+    },
+    {
+      "id": 32,
+      "name": "Shreya Nair",
+      "course": "Electronics",
+      "age": 20
+    },
+    {
+      "id": 33,
+      "name": "Kunal Shah",
+      "course": "Data Science",
+      "age": 21
+    },
+    {
+      "id": 34,
+      "name": "Manya Agarwal",
+      "course": "Biotechnology",
+      "age": 19
+    },
+    {
+      "id": 35,
+      "name": "Raj Malhotra",
+      "course": "Mechanical Engineering",
+      "age": 22
+    },
+    {
+      "id": 36,
+      "name": "Tanya Gupta",
+      "course": "Computer Science",
+      "age": 20
+    },
+    {
+      "id": 37,
+      "name": "Dhruv Patel",
+      "course": "Information Technology",
+      "age": 21
+    },
+    {
+      "id": 38,
+      "name": "Ayesha Khan",
+      "course": "Civil Engineering",
+      "age": 19
+    },
+    {
+      "id": 39,
+      "name": "Sahil Arora",
+      "course": "Electronics",
+      "age": 23
+    },
+    {
+      "id": 40,
+      "name": "Palak Joshi",
+      "course": "Data Science",
+      "age": 20
+    },
+    {
+      "id": 41,
+      "name": "Mohit Saxena",
+      "course": "Computer Science",
+      "age": 22
+    },
+    {
+      "id": 42,
+      "name": "Nandini Rao",
+      "course": "Biotechnology",
+      "age": 21
+    },
+    {
+      "id": 43,
+      "name": "Pranav Desai",
+      "course": "Information Technology",
+      "age": 19
+    },
+    {
+      "id": 44,
+      "name": "Ishita Sen",
+      "course": "Mechanical Engineering",
+      "age": 20
+    },
+    {
+      "id": 45,
+      "name": "Abhishek Roy",
+      "course": "Civil Engineering",
+      "age": 22
+    },
+    {
+      "id": 46,
+      "name": "Muskan Verma",
+      "course": "Electronics",
+      "age": 18
+    },
+    {
+      "id": 47,
+      "name": "Parth Bhatt",
+      "course": "Computer Science",
+      "age": 21
+    },
+    {
+      "id": 48,
+      "name": "Lavanya Reddy",
+      "course": "Data Science",
+      "age": 20
+    },
+    {
+      "id": 49,
+      "name": "Saurabh Tiwari",
+      "course": "Biotechnology",
+      "age": 23
+    },
+    {
+      "id": 50,
+      "name": "Khushi Mehta",
+      "course": "Information Technology",
+      "age": 19
+    },
+    {
+      "id": 51,
+      "name": "Jay Patel",
+      "course": "Mechanical Engineering",
+      "age": 21
+    },
+    {
+      "id": 52,
+      "name": "Ritika Sharma",
+      "course": "Computer Science",
+      "age": 20
+    },
+    {
+      "id": 53,
+      "name": "Aman Soni",
+      "course": "Electronics",
+      "age": 22
+    },
+    {
+      "id": 54,
+      "name": "Swati Mishra",
+      "course": "Civil Engineering",
+      "age": 19
+    },
+    {
+      "id": 55,
+      "name": "Chirag Joshi",
+      "course": "Data Science",
+      "age": 21
+    },
+    {
+      "id": 56,
+      "name": "Pallavi Iyer",
+      "course": "Biotechnology",
+      "age": 20
+    },
+    {
+      "id": 57,
+      "name": "Rishabh Jain",
+      "course": "Information Technology",
+      "age": 22
+    },
+    {
+      "id": 58,
+      "name": "Anjali Gupta",
+      "course": "Computer Science",
+      "age": 18
+    },
+    {
+      "id": 59,
+      "name": "Nitin Kumar",
+      "course": "Mechanical Engineering",
+      "age": 23
+    },
+    {
+      "id": 60,
+      "name": "Bhavya Shah",
+      "course": "Electronics",
+      "age": 20
+    },
+    {
+      "id": 61,
+      "name": "Darshan Vyas",
+      "course": "Computer Science",
+      "age": 21
+    },
+    {
+      "id": 62,
+      "name": "Komal Patel",
+      "course": "Data Science",
+      "age": 19
+    },
+    {
+      "id": 63,
+      "name": "Gaurav Singh",
+      "course": "Civil Engineering",
+      "age": 22
+    },
+    {
+      "id": 64,
+      "name": "Prisha Mehta",
+      "course": "Information Technology",
+      "age": 20
+    },
+    {
+      "id": 65,
+      "name": "Sanket Shah",
+      "course": "Biotechnology",
+      "age": 21
+    },
+    {
+      "id": 66,
+      "name": "Mitali Desai",
+      "course": "Electronics",
+      "age": 19
+    },
+    {
+      "id": 67,
+      "name": "Ankit Verma",
+      "course": "Computer Science",
+      "age": 22
+    },
+    {
+      "id": 68,
+      "name": "Jhanvi Trivedi",
+      "course": "Mechanical Engineering",
+      "age": 20
+    },
+    {
+      "id": 69,
+      "name": "Keshav Rao",
+      "course": "Data Science",
+      "age": 23
+    },
+    {
+      "id": 70,
+      "name": "Sonal Kapoor",
+      "course": "Civil Engineering",
+      "age": 19
+    },
+    {
+      "id": 71,
+      "name": "Rudra Sharma",
+      "course": "Information Technology",
+      "age": 21
+    },
+    {
+      "id": 72,
+      "name": "Payal Nair",
+      "course": "Computer Science",
+      "age": 20
+    },
+    {
+      "id": 73,
+      "name": "Tushar Gupta",
+      "course": "Electronics",
+      "age": 22
+    },
+    {
+      "id": 74,
+      "name": "Aarohi Patel",
+      "course": "Biotechnology",
+      "age": 19
+    },
+    {
+      "id": 75,
+      "name": "Vivek Mishra",
+      "course": "Mechanical Engineering",
+      "age": 21
+    },
+    {
+      "id": 76,
+      "name": "Mahi Shah",
+      "course": "Data Science",
+      "age": 20
+    },
+    {
+      "id": 77,
+      "name": "Rajat Bansal",
+      "course": "Civil Engineering",
+      "age": 23
+    },
+    {
+      "id": 78,
+      "name": "Srishti Kumar",
+      "course": "Computer Science",
+      "age": 18
+    },
+    {
+      "id": 79,
+      "name": "Hemant Joshi",
+      "course": "Information Technology",
+      "age": 22
+    },
+    {
+      "id": 80,
+      "name": "Charvi Desai",
+      "course": "Electronics",
+      "age": 20
+    },
+    {
+      "id": 81,
+      "name": "Meet Thakkar",
+      "course": "Data Science",
+      "age": 21
+    },
+    {
+      "id": 82,
+      "name": "Rupal Mehta",
+      "course": "Biotechnology",
+      "age": 19
+    },
+    {
+      "id": 83,
+      "name": "Akshay Nair",
+      "course": "Mechanical Engineering",
+      "age": 22
+    },
+    {
+      "id": 84,
+      "name": "Kriti Sharma",
+      "course": "Computer Science",
+      "age": 20
+    },
+    {
+      "id": 85,
+      "name": "Bhavesh Patel",
+      "course": "Civil Engineering",
+      "age": 21
+    },
+    {
+      "id": 86,
+      "name": "Esha Gupta",
+      "course": "Information Technology",
+      "age": 19
+    },
+    {
+      "id": 87,
+      "name": "Nirav Shah",
+      "course": "Electronics",
+      "age": 23
+    },
+    {
+      "id": 88,
+      "name": "Apoorva Rao",
+      "course": "Data Science",
+      "age": 20
+    },
+    {
+      "id": 89,
+      "name": "Kushal Jain",
+      "course": "Computer Science",
+      "age": 22
+    },
+    {
+      "id": 90,
+      "name": "Disha Verma",
+      "course": "Biotechnology",
+      "age": 19
+    },
+    {
+      "id": 91,
+      "name": "Tejas Vora",
+      "course": "Mechanical Engineering",
+      "age": 21
+    },
+    {
+      "id": 92,
+      "name": "Nikita Singh",
+      "course": "Information Technology",
+      "age": 20
+    },
+    {
+      "id": 93,
+      "name": "Yuvraj Mehta",
+      "course": "Computer Science",
+      "age": 22
+    },
+    {
+      "id": 94,
+      "name": "Aishwarya Iyer",
+      "course": "Electronics",
+      "age": 19
+    },
+    {
+      "id": 95,
+      "name": "Rakesh Kumar",
+      "course": "Civil Engineering",
+      "age": 23
+    },
+    {
+      "id": 96,
+      "name": "Janvi Patel",
+      "course": "Data Science",
+      "age": 20
+    },
+    {
+      "id": 97,
+      "name": "Smit Shah",
+      "course": "Biotechnology",
+      "age": 21
+    },
+    {
+      "id": 98,
+      "name": "Tanmay Joshi",
+      "course": "Computer Science",
+      "age": 19
+    },
+    {
+      "id": 99,
+      "name": "Krisha Desai",
+      "course": "Information Technology",
+      "age": 22
+    },
+    {
+      "id": 100,
+      "name": "Omkar Reddy",
+      "course": "Mechanical Engineering",
+      "age": 20
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }
